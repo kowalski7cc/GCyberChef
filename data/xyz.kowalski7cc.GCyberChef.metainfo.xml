@@ -10,8 +10,15 @@
 	  <p>The tool is designed to enable both technical and non-technical analysts to manipulate data in complex ways without having to deal with complex tools or algorithms. It was conceived, designed, built and incrementally improved by an analyst in their 10% innovation time over several years.</p>
 	</description>
 
+	<url type="homepage">https://github.com/kowalski7cc/GCyberChef</url>
+	<url type="bugtracker">https://github.com/kowalski7cc/GCyberChef/issues</url>
+
 	<metadata_license>CC-BY-SA-4.0</metadata_license>
 	<project_license>GPL-3.0-or-later</project_license>
+
+	<categories>
+        <category>Development</category>
+    </categories>
 
 	<launchable type="desktop-id">@APP_ID@.desktop</launchable>
 	<provides>
@@ -19,5 +26,25 @@
 		<dbus type="user">@APP_ID@</dbus>
 	</provides>
 	<translation type="gettext">@APP_ID@</translation>
+
+	<screenshots>
+        <screenshot type="default">
+            <image>https://raw.githubusercontent.com/kowalski7cc/GCyberChef/main/screenshot.png</image>
+        </screenshot>
+    </screenshots>
+
+	<keywords>
+        <keyword>Encoding</keyword>
+        <keyword>Compression</keyword>
+        <keyword>Data Analysis</keyword>
+		<keyword>Encryption</keyword>
+		<keyword>CyberChef</keyword>
+    </keywords>
+
+	<metadata_license>CC0-1.0</metadata_license>
+    <developer_name>Kowalski Dragon (kowalski7cc)</developer_name>
+    <project_license>GPL-3.0-or-later</project_license>
+
+	<content_rating type="oars-1.1" />
 </component>
 
