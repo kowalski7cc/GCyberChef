@@ -1,5 +1,7 @@
 # GCyberChef
 
+![GCyberChef screenshot](screenshot.png)
+
 An offline version of the CyberChef tool, the Cyber Swiss Army Knife.
 
 This app is a port of the original CyberChef tool, which is available at https://gchq.github.io/CyberChef/. This project is not affiliated with the original CyberChef project.
