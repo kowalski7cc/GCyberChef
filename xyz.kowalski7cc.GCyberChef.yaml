@@ -1,0 +1,43 @@
+---
+app-id: xyz.kowalski7cc.GCyberChef
+runtime: org.gnome.Platform
+runtime-version: "45"
+branch: stable
+sdk: org.gnome.Sdk
+command: xyz.kowalski7cc.GCyberChef
+finish-args:
+  - "--share=ipc"
+  - "--socket=fallback-x11"
+  - "--socket=wayland"
+  - "--device=dri"
+
+cleanup:
+  - "/include"
+  - "/lib/pkgconfig"
+  - "/share/pkgconfig"
+  - "/share/aclocal"
+  - "/man"
+  - "/share/man"
+  - "/share/gtk-doc"
+  - "/share/vala"
+  - "*.la"
+  - "*.a"
+modules:
+  - name: cyberchef
+    buildsystem: simple
+    build-commands:
+      - |
+        mkdir -p $FLATPAK_DEST/share/cyberchef/
+        unzip CyberChef_v10.8.2.zip -d $FLATPAK_DEST/share/cyberchef/
+        ln -s $FLATPAK_DEST/share/cyberchef/CyberChef_v10.8.2.html $FLATPAK_DEST/share/cyberchef/index.html
+    sources:
+      - type: file
+        url: https://github.com/gchq/CyberChef/releases/download/v10.8.2/CyberChef_v10.8.2.zip
+        sha256: 123b72659d2994b834f1d777e09f8a431653b0982c536c8cc4c156e1dc882c11
+  - name: gcyberchef
+    buildsystem: meson
+    sources:
+      - type: dir
+        path: .
+build-options:
+  env: {}

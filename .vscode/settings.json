@@ -1,0 +1,18 @@
+{
+  "files.exclude": {
+    "**/.flatpak-builder/*": true,
+    "**/build/*": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true,
+    "**/.hg/store/**": true,
+    ".flatpak/**": true,
+    "_build/**": true
+  },
+  "C_Cpp.default.compileCommands": "/home/kowalski7cc/Repository/GCyberChef/_build/compile_commands.json",
+  "mesonbuild.mesonPath": "${workspaceFolder}/.flatpak/meson.sh",
+  "mesonbuild.configureOnOpen": false,
+  "mesonbuild.buildFolder": "_build"
+}

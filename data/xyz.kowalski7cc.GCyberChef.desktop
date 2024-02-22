@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=GCyberChef
+Comment=The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis
+Icon=@APP_ID@
+Exec=@BINDIR@/@APP_ID@
+Type=Application
+DBusActivatable=true
+Categories=Development;
+Keywords=Encoding;Compression;Data Analysis;Encryption;CyberChef;
+

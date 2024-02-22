@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+	<id>@APP_ID@</id>
+
+	<name>GCyberChef</name>
+	<summary>The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis</summary>
+	<description>
+		<p>The Cyber Swiss Army Knife</p>
+	  <p>CyberChef is a simple, intuitive web app for carrying out all manner of "cyber" operations within a web browser. These operations include simple encoding like XOR and Base64, more complex encryption like AES, DES and Blowfish, creating binary and hexdumps, compression and decompression of data, calculating hashes and checksums, IPv6 and X.509 parsing, changing character encodings, and much more.</p>
+	  <p>The tool is designed to enable both technical and non-technical analysts to manipulate data in complex ways without having to deal with complex tools or algorithms. It was conceived, designed, built and incrementally improved by an analyst in their 10% innovation time over several years.</p>
+	</description>
+
+	<metadata_license>CC-BY-SA-4.0</metadata_license>
+	<project_license>GPL-3.0-or-later</project_license>
+
+	<launchable type="desktop-id">@APP_ID@.desktop</launchable>
+	<provides>
+		<binary>@APP_ID@</binary>
+		<dbus type="user">@APP_ID@</dbus>
+	</provides>
+	<translation type="gettext">@APP_ID@</translation>
+</component>
+
