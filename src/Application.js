@@ -4,7 +4,6 @@ import Adw from "gi://Adw";
 import WebKit from "gi://WebKit";
 import GLib from "gi://GLib?version=2.0";
 
-//GLib.set_application_name("GCyberChef")
 
 export const Application = GObject.registerClass(
   {
@@ -27,7 +26,32 @@ export const Application = GObject.registerClass(
 
       window.child = webview;
       webview.load_uri("file:///app/share/cyberchef/index.html");
-      webview;
+      const shortcutController = new Gtk.ShortcutController();
+      shortcutController.add_shortcut(
+        new Gtk.Shortcut({
+          action: Gtk.NamedAction.new("app.quit"),
+          trigger: Gtk.ShortcutTrigger.parse_string("<ctrl>q"),
+        })
+      )
+      shortcutController.add_shortcut(
+        new Gtk.Shortcut({
+          action: Gtk.NamedAction.new("win.close"),
+          trigger: Gtk.ShortcutTrigger.parse_string("<ctrl>w"),
+        })
+      )
+      shortcutController.add_shortcut(
+        new Gtk.Shortcut({
+          action: Gtk.NamedAction.new("win.fullscreen"),
+          trigger: Gtk.ShortcutTrigger.parse_string("<F11>"),
+        })
+      )
+      shortcutController.add_shortcut(
+        new Gtk.Shortcut({
+          action: Gtk.NamedAction.new("app.about"),
+          trigger: Gtk.ShortcutTrigger.parse_string("<F1>"),
+        })
+      )
+      window.add_controller(shortcutController);
       window.present();
     }
   }

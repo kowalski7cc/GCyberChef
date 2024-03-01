@@ -1,6 +1,8 @@
 import "gi://Gdk?version=4.0";
 import "gi://Gtk?version=4.0";
 import "gi://WebKit?version=6.0";
+import 'gi://Adw?version=1'
+import 'gi://GLib?version=2.0'
 
 import { Application } from "./Application.js";
 
