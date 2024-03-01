@@ -1,12 +1,27 @@
 # File created using '.gitignore Generator' for Visual Studio Code: https://bit.ly/vscode-gig
-# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,linux,flatpak
-# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,linux,flatpak
+# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,linux,flatpak,git
+# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,linux,flatpak,git
 
 ### Flatpak ###
 .flatpak-builder
 build
 build-dir
 repo
+
+### Git ###
+# Created by git for backups. To disable backups in Git:
+# $ git config --global mergetool.keepBackup false
+*.orig
+
+# Created by git when using merge tools for conflicts
+*.BACKUP.*
+*.BASE.*
+*.LOCAL.*
+*.REMOTE.*
+*_BACKUP_*.txt
+*_BASE_*.txt
+*_LOCAL_*.txt
+*_REMOTE_*.txt
 
 ### Linux ###
 *~
@@ -42,7 +57,8 @@ repo
 .history
 .ionide
 
-# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,linux,flatpak
+# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,linux,flatpak,git
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
 
+**/*.flatpak
